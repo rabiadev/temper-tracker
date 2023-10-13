@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "TEMPUS",
+    "slug": "tempus",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/tempus-logo.png",
+    "splash": {
+      "image": "./src/assets/tempus-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.noorulislam.tempus"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/tempus-logo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.noorulislam.tempus",
+      "useNextNotificationsApi": true
+    },
+    "web": {
+      "favicon": "./src/assets/tempus-logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5d7da58e-b9e9-42e0-b765-25f0f0c35544"
+      }
+    }
+  }
+}
