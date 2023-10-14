@@ -12,7 +12,7 @@ Notifications.setNotificationHandler({
 });
 
 export default function Notification() {
-  const [expoPushToken, setExpoPushToken] = useState("");
+  const [expoPushToken, setExpoPushToken] = useState("");  
   const [notification, setNotification] = useState(false);
   const notificationListener = useRef();
   const responseListener = useRef();
@@ -98,4 +98,5 @@ async function registerForPushNotificationsAsync() {
 
 export async function cancelNotification(notifId){
   await Notifications.cancelScheduledNotificationAsync(notifId);
-}
+} 
+

@@ -13,9 +13,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.noorulislam.tempus"
@@ -31,10 +29,6 @@
     "web": {
       "favicon": "./src/assets/tempus-logo.png"
     },
-    "extra": {
-      "eas": {
-        "projectId": "5d7da58e-b9e9-42e0-b765-25f0f0c35544"
-      }
-    }
+  "owner": "noorulislam"
   }
 }

@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { theme } from './src/core/theme'
 
-import { v4 as uuidv4 } from 'uuid-random';
+// import { v4 as uuidv4 } from 'uuid-random';
 
 
 import {
@@ -17,8 +17,8 @@ import {
 import Temprature from './src/screens/Temprature'
 import MapViewLocation from './src/screens/Map'
 import * as Notifications from "expo-notifications";
+// import Notification from './src/notification'
 const Stack = createStackNavigator();
-
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
     shouldShowAlert: true,

@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Background from '../components/Background'
-import Logo from '../components/Logo'
 import Header from '../components/Header'
 import Paragraph from '../components/Paragraph'
-import { View } from 'react-native'
-import { theme } from '../core/theme'
+
 import TempratureBox from '../components/TempratureBox'
 import { db } from '../../firebaseConfig';
 import { onValue, ref } from "firebase/database";
 import { schedulePushNotification } from '../notification'
-import { v4 as uuidv4 } from 'uuid';
 import * as Notifications from "expo-notifications";
-
+ 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
     shouldShowAlert: true,
@@ -33,7 +30,7 @@ export default function Temprature({ navigation }) {
         setValues({ ...values, ...data });
         console.log('change');
         triggerNotifications();
-      }
+      } 
     });
   }, []);
   const triggerNotifications = async () => {
@@ -43,6 +40,8 @@ export default function Temprature({ navigation }) {
   return (
     <Background>
       <Header>Tempratures</Header>
+    
+      {/* <Button onPress={()=>navigation.naigate('notofication')} title='click'/> */}
       <Paragraph>
         You can check internal and external tempratures of container
       </Paragraph>
